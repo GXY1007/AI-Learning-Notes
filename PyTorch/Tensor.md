@@ -135,4 +135,3 @@ t_tensor = torch.from_numpy(t)
 
 🗣️ **面试话术**
 > 在 PyTorch 中，张量是核心数据结构，类似 NumPy 的 ndarray，但支持 GPU 计算和自动微分。我们可以使用 `torch.tensor()` 或 `torch.from_numpy()` 来创建张量，并通过 `.to('cuda')` 将其移动到 GPU。对于计算，我们可以使用 `matmul()` 进行矩阵乘法，`*` 进行逐元素乘法，同时 `cat()` 用于拼接张量。如果需要获取单个值，可以使用 `.item()`，但要避免原地操作（如 `add_()`），以防止影响计算图。
-
